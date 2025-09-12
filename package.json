@@ -1,5 +1,5 @@
 {
-  "name": "prayer-invitation",
+  "name": "farewell",
   "version": "1.0.0",
   "description": "Sacred Prayer Gathering Invitation for Iqra's medical journey",
   "main": "index.html",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/prayer-invitation.git"
+    "url": "https://github.com/xshadabx/farewell.git"
   },
   "engines": {
     "node": ">=14.0.0"

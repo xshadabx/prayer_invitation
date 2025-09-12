@@ -1,4 +1,4 @@
-# Sacred Prayer Gathering Invitation
+# Farewell Prayer Gathering Invitation
 
 A beautiful, responsive invitation for Iqra's prayer gathering celebrating her journey into medical service.
 
@@ -15,7 +15,7 @@ A beautiful, responsive invitation for Iqra's prayer gathering celebrating her j
 
 ## 🚀 Live Demo
 
-[View Invitation](https://prayer-invitation.vercel.app)
+[View Invitation](https://farewell.vercel.app)
 
 ## 📅 Event Details
 
@@ -97,8 +97,8 @@ This invitation can be shared via:
 
 1. **Fork/Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/prayer-invitation.git
-   cd prayer-invitation
+   git clone https://github.com/xshadabx/farewell.git
+   cd farewell
    ```
 
 2. **Deploy to Vercel**
@@ -114,8 +114,8 @@ This invitation can be shared via:
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/prayer-invitation.git
-   cd prayer-invitation
+   git clone https://github.com/xshadabx/farewell.git
+   cd farewell
    ```
 
 2. **Open in Browser**
@@ -128,7 +128,7 @@ This invitation can be shared via:
 ## 📁 Project Structure
 
 ```
-prayer-invitation/
+farewell/
 ├── index.html          # Main invitation file
 ├── README.md          # Project documentation
 ├── vercel.json        # Vercel deployment config
@@ -198,8 +198,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 For questions or support:
 - **Email**: support@prayer-invitation.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/prayer-invitation/issues)
-- **Documentation**: [Wiki](https://github.com/yourusername/prayer-invitation/wiki)
+- **Issues**: [GitHub Issues](https://github.com/xshadabx/farewell/issues)
+- **Documentation**: [Wiki](https://github.com/xshadabx/farewell/wiki)
 
 ---
 
