@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sacred Prayer Gathering Invitation for Iqra's journey into medical service. Join us on September 14th at Canopy, MG Road for a blessed evening of prayers and celebration.">
+    <meta name="keywords" content="prayer gathering, medical journey, Islamic celebration, Iqra, Canopy MG Road, September 14th">
+    <meta name="author" content="Prayer Invitation">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sacred Prayer Gathering - Iqra's Medical Journey">
+    <meta property="og:description" content="Join us for a blessed evening of prayers celebrating Iqra's noble journey into medical service. September 14th at Canopy, MG Road.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prayer-invitation.vercel.app">
+    <meta property="og:image" content="https://prayer-invitation.vercel.app/assets/preview-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Prayer Invitation">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sacred Prayer Gathering - Iqra's Medical Journey">
+    <meta name="twitter:description" content="Join us for a blessed evening of prayers celebrating Iqra's noble journey into medical service.">
+    <meta name="twitter:image" content="https://prayer-invitation.vercel.app/assets/preview-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"></noscript>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Sacred Prayer Gathering - Iqra's Medical Journey",
+        "description": "A blessed evening of prayers celebrating Iqra's noble journey into medical service",
+        "startDate": "2024-09-14T18:00:00+05:30",
+        "location": {
+            "@type": "Place",
+            "name": "Canopy, MG Road",
+            "address": "MG Road, Bangalore, India"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Prayer Gathering Committee"
+        }
+    }
+    </script>
+    
+    <title>Sacred Prayer Gathering - Iqra's Medical Journey | September 14th</title>
+    
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #F4E4BC;
+            --accent-green: #2D5016;
+            --soft-cream: #FEFCF7;
+            --warm-white: #FFFFFF;
+            --text-dark: #2C2C2C;
+            --text-light: #666666;
+            --shadow-soft: rgba(212, 175, 55, 0.1);
+            --shadow-medium: rgba(212, 175, 55, 0.2);
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+            --gradient-bg: linear-gradient(135deg, #FEFCF7 0%, #F4E4BC 50%, #FEFCF7 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--gradient-bg);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* Performance optimizations */
+        .container {
+            will-change: transform;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        
+        .invitation-card {
+            will-change: transform;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        
+        /* Typography with fallbacks */
+        .playfair {
+            font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        }
+        
+        .inter {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Invitation card */
+        .invitation-card {
+            background: var(--warm-white);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px var(--shadow-soft), 0 8px 25px var(--shadow-medium);
+            padding: 3rem 2.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--secondary-gold);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .invitation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px var(--shadow-soft), 0 12px 35px var(--shadow-medium);
+        }
+        
+        /* Decorative elements */
+        .invitation-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--secondary-gold) 0%, transparent 70%);
+            opacity: 0.1;
+            animation: rotate 20s linear infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Header section */
+        .header {
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .bismillah {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            color: var(--primary-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px var(--shadow-soft);
+        }
+        
+        .subtitle {
+            font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+            color: var(--text-light);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        
+        /* Event details */
+        .event-details {
+            background: var(--gradient-gold);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .event-details h2 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--warm-white);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            color: var(--warm-white);
+        }
+        
+        .detail-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            background: var(--warm-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: var(--primary-gold);
+        }
+        
+        /* Medical journey section */
+        .journey-section {
+            margin: 2.5rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .journey-title {
+            font-size: clamp(1.6rem, 4.5vw, 2.2rem);
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .journey-text {
+            font-size: clamp(1rem, 3vw, 1.1rem);
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .medical-symbols {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .symbol {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--warm-white);
+            box-shadow: 0 8px 20px var(--shadow-soft);
+            transition: transform 0.3s ease;
+        }
+        
+        .symbol:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Prayer section */
+        .prayer-section {
+            background: var(--soft-cream);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-gold);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .prayer-text {
+            font-size: clamp(1rem, 3vw, 1.1rem);
+            color: var(--text-dark);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .prayer-reference {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-align: right;
+        }
+        
+        /* RSVP section */
+        .rsvp-section {
+            margin: 2.5rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .rsvp-title {
+            font-size: clamp(1.4rem, 4vw, 1.8rem);
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .rsvp-text {
+            font-size: clamp(1rem, 3vw, 1.1rem);
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: var(--warm-white);
+            border-radius: 25px;
+            box-shadow: 0 4px 15px var(--shadow-soft);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--shadow-medium);
+        }
+        
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            color: var(--primary-gold);
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--secondary-gold);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-text {
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .blessing {
+            font-size: clamp(1.1rem, 3vw, 1.3rem);
+            color: var(--primary-gold);
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+            
+            .invitation-card {
+                padding: 2rem 1.5rem;
+                border-radius: 16px;
+            }
+            
+            .event-details {
+                padding: 1.5rem;
+            }
+            
+            .medical-symbols {
+                gap: 1rem;
+            }
+            
+            .symbol {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .invitation-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .event-details {
+                padding: 1rem;
+            }
+            
+            .prayer-section {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .invitation-card {
+                box-shadow: none;
+                border: 2px solid #000;
+                page-break-inside: avoid;
+            }
+            
+            .invitation-card::before {
+                display: none;
+            }
+            
+            .symbol:hover,
+            .contact-item:hover,
+            .invitation-card:hover {
+                transform: none;
+            }
+            
+            .container {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            .invitation-card::before {
+                animation: none;
+            }
+            
+            .symbol:hover,
+            .contact-item:hover,
+            .invitation-card:hover {
+                transition: none;
+                transform: none;
+            }
+        }
+        
+        /* High contrast mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-gold: #B8860B;
+                --text-dark: #000000;
+                --text-light: #333333;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        .contact-item:focus,
+        .symbol:focus {
+            outline: 2px solid var(--primary-gold);
+            outline-offset: 2px;
+        }
+        
+        /* Loading state */
+        .loading {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card loading">
+            <!-- Header -->
+            <div class="header">
+                <div class="bismillah playfair">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <h1 class="main-title playfair">Sacred Prayer Gathering</h1>
+                <p class="subtitle inter">A Blessed Evening Celebrating Iqra's Noble Journey</p>
+            </div>
+            
+            <!-- Event Details -->
+            <div class="event-details">
+                <h2 class="playfair">Event Details</h2>
+                <div class="detail-item">
+                    <div class="detail-icon">📅</div>
+                    <span>September 14th, 2024</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🕰️</div>
+                    <span>6:00 PM - 8:30 PM</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">📍</div>
+                    <span>Canopy, MG Road, Bangalore</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">👥</div>
+                    <span>Family & Friends Welcome</span>
+                </div>
+            </div>
+            
+            <!-- Medical Journey Section -->
+            <div class="journey-section">
+                <h2 class="journey-title playfair">A Journey of Healing & Service</h2>
+                <p class="journey-text inter">
+                    As Iqra embarks on her noble path in the medical field, we gather to seek Allah's blessings 
+                    for her journey of healing and service to humanity. Her dedication to medicine reflects the 
+                    beautiful Islamic tradition of caring for others.
+                </p>
+                
+                <div class="medical-symbols">
+                    <div class="symbol" role="img" aria-label="Medical cross">⚕️</div>
+                    <div class="symbol" role="img" aria-label="Heart symbol">❤️</div>
+                    <div class="symbol" role="img" aria-label="Prayer hands">🤲</div>
+                    <div class="symbol" role="img" aria-label="Star of healing">⭐</div>
+                </div>
+            </div>
+            
+            <!-- Prayer Section -->
+            <div class="prayer-section">
+                <p class="prayer-text playfair">
+                    "And We send down of the Quran that which is healing and mercy for the believers, 
+                    but it does not increase the wrongdoers except in loss."
+                </p>
+                <p class="prayer-reference inter">- Quran 17:82</p>
+            </div>
+            
+            <!-- RSVP Section -->
+            <div class="rsvp-section">
+                <h2 class="rsvp-title playfair">Join Us in Prayer</h2>
+                <p class="rsvp-text inter">
+                    Your presence and prayers would be a blessing. Please confirm your attendance 
+                    so we can prepare accordingly.
+                </p>
+                
+                <div class="contact-info">
+                    <a href="tel:+919876543210" class="contact-item" aria-label="Call for RSVP">
+                        <span class="contact-icon">📞</span>
+                        <span>Call: +91 98765 43210</span>
+                    </a>
+                    <a href="https://wa.me/919876543210" class="contact-item" aria-label="WhatsApp for RSVP">
+                        <span class="contact-icon">💬</span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="mailto:rsvp@prayer-gathering.com" class="contact-item" aria-label="Email for RSVP">
+                        <span class="contact-icon">📧</span>
+                        <span>Email RSVP</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer">
+                <p class="footer-text inter">
+                    This gathering is open to all family members and friends who wish to join us 
+                    in seeking Allah's blessings for Iqra's journey in medicine.
+                </p>
+                <p class="blessing playfair">
+                    May Allah bless her with knowledge, wisdom, and success in serving humanity. Ameen.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Minimal JavaScript for error handling and performance -->
+    <script>
+        // Error handling for font loading
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if fonts loaded successfully
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(function() {
+                    console.log('Fonts loaded successfully');
+                }).catch(function(error) {
+                    console.warn('Font loading failed, using fallbacks:', error);
+                });
+            }
+            
+            // Add loading class for smooth appearance
+            const card = document.querySelector('.invitation-card');
+            if (card) {
+                card.classList.add('loading');
+            }
+            
+            // Handle contact link clicks
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach(function(item) {
+                item.addEventListener('click', function(e) {
+                    // Add analytics tracking here if needed
+                    console.log('Contact method clicked:', this.textContent.trim());
+                });
+            });
+        });
+        
+        // Handle any runtime errors gracefully
+        window.addEventListener('error', function(e) {
+            console.warn('Runtime error handled gracefully:', e.error);
+            // Don't break the user experience
+        });
+    </script>
+</body>
+</html>
