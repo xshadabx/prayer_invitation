@@ -1,31 +1,10 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
+  "functions": {
+    "api/webhook.js": {
+      "runtime": "nodejs18.x"
     },
-    {
-      "src": "whatsapp-bot/api/webhook.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "whatsapp-bot/api/health.js",
-      "use": "@vercel/node"
+    "api/health.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/webhook",
-      "dest": "/whatsapp-bot/api/webhook.js"
-    },
-    {
-      "src": "/api/health",
-      "dest": "/whatsapp-bot/api/health.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ]
+  }
 }
