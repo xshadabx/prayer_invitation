@@ -2,11 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "assets/**/*",
+      "src": "public/**",
       "use": "@vercel/static"
     },
     {
@@ -16,10 +12,6 @@
     {
       "src": "whatsapp-bot/api/health.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "whatsapp-bot/public/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -32,16 +24,8 @@
       "dest": "/whatsapp-bot/api/health.js"
     },
     {
-      "src": "/bot",
-      "dest": "/whatsapp-bot/public/index.html"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/public/$1"
     }
   ]
 }
