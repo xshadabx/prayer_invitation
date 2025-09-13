@@ -8,9 +8,33 @@
     {
       "src": "assets/**/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "whatsapp-bot/api/webhook.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "whatsapp-bot/api/health.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "whatsapp-bot/public/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/api/webhook",
+      "dest": "/whatsapp-bot/api/webhook.js"
+    },
+    {
+      "src": "/api/health",
+      "dest": "/whatsapp-bot/api/health.js"
+    },
+    {
+      "src": "/bot",
+      "dest": "/whatsapp-bot/public/index.html"
+    },
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
