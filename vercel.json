@@ -8,25 +8,9 @@
     {
       "src": "assets/**",
       "use": "@vercel/static"
-    },
-    {
-      "src": "api/webhook.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/health.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/webhook",
-      "dest": "/api/webhook.js"
-    },
-    {
-      "src": "/api/health",
-      "dest": "/api/health.js"
-    },
     {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
